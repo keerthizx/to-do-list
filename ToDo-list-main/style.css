@@ -1,0 +1,127 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading */
+.todo h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #4caf50;
+}
+
+.todo img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Input and Button Row */
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Table Styling */
+#task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#task-table th, #task-table td {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+#task-table th {
+  background-color: #4caf50;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#task-table td {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+/* Strike-through for completed tasks */
+.strikethrough {
+  text-decoration: line-through;
+  color: #757575;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
